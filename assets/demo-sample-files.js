@@ -39,7 +39,8 @@ for (let i = 1; i < 16; i++) {
  * serial(urls.map(url => () => $.ajax(url)))
  *     .then(console.log.bind(console))
  */
-const serial = (funcs) =>
+
+/*const serial = (funcs) =>
 	funcs.reduce(
 		(promise, func) =>
 			promise.then((result) =>
