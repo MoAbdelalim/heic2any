@@ -4,7 +4,7 @@ document.getElementById("user-file").addEventListener("change", function (ev) {
 	var blob = ev.target.files[0];
 	heic2any({
 		blob: blob,
-		toType: "image/gif",
+		toType: "image/jpeg",
 	})
 		.then(function (resultBlob) {
 			saveFile(resultBlob, blob.name + ".gif");
