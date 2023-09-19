@@ -28,7 +28,7 @@ async function placeMDContent(relativePath, linesToDelete, elementID) {
 }
 
 async function loadContent() {
-	await placeMDContent("./readme.md", 3, "overview-content");
+	/*await placeMDContent("./readme.md", 3, "overview-content");
 	await placeMDContent(
 		"./docs/getting-started.md",
 		1,
@@ -40,7 +40,7 @@ async function loadContent() {
 
 	await placeMDContent("./docs/errors.md", 1, "error-handling-content");
 	await placeMDContent("./LICENSE.md", 0, "license-content");
-
+	*/
 	document.querySelectorAll("pre code").forEach(function (block) {
 		hljs.highlightBlock(block);
 	});
