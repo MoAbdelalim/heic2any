@@ -57,3 +57,4 @@ serial(funcs)
 		document.getElementById("loading").innerHTML = "";
 	})
 	.catch((e) => console.log(e));
+*/
