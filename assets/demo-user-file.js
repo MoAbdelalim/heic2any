@@ -7,7 +7,7 @@ document.getElementById("user-file").addEventListener("change", function (ev) {
 		toType: "image/jpeg",
 	})
 		.then(function (resultBlob) {
-			saveFile(resultBlob, blob.name + ".gif");
+			saveFile(resultBlob, blob.name + ".jpeg");
 		})
 		.catch(function (x) {
 			document.getElementById("error-on-try").style.display = "block";
